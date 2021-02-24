@@ -1,0 +1,11 @@
+name: BasicPlugin
+version: 1.0
+author: LimuKarhu
+main: me.LimuKarhu.basic.Main
+description: -no desc-
+
+commands:
+  hello:
+    aliases: [hi]
+    description: hellocommand
+  mystery:
