@@ -1,0 +1,28 @@
+package MineMavenGroup.MineStats.listeners;
+
+import org.bukkit.Bukkit;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
+
+import MineMavenGroup.MineStats.Main;
+import MineMavenGroup.MineStats.utility.Globals;
+
+public class PvpListener implements Listener {
+
+private Main plugin;
+	
+	public PvpListener(Main plugin) {
+		this.plugin = plugin;
+		Bukkit.getPluginManager().registerEvents(this, plugin);
+	}
+	
+	@EventHandler
+	public void onHit(EntityDamageByEntityEvent event) {
+		//Players should not be able to hit eachother unless the game has been started
+		if(!Globals.gameHasStarted) {
+			event.setCancelled(true);
+		}
+	}
+	
+}
