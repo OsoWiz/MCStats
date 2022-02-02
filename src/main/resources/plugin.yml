@@ -1,0 +1,27 @@
+name: MineStats
+version: 1.0
+#Might need to change this depending on your package structure, but it's standard not to.
+main: MineMavenGroup.MineStats.Main
+author: limukarhu
+api-version: 1.16
+
+commands:
+  start:
+   description: starts the game
+   aliases: [starttaa, aloita]
+  stats:
+   description: shows ur stats
+   aliases: [statit,data]
+  Update:
+   aliases: [paivita,upload]
+  upload:
+  uploadall:
+  rank:
+  average:
+   aliases: [avg]
+  amount:
+  poll:
+  join:
+  record:
+  teams:
+  elytra:
